@@ -241,7 +241,7 @@ exports.default = function (Component, customScroller) {
         }
 
         var offsetY = y - _this2.props.offset;
-        isInside = offsetY >= Math.floor(elemTopBound) && offsetY < Math.floor(elemBottomBound);
+        isInside = offsetY >= Math.floor(elemTopBound) - 2 && offsetY < Math.floor(elemBottomBound);
         isOutside = offsetY < Math.floor(elemTopBound) || offsetY >= Math.floor(elemBottomBound);
       }
 
