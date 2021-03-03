@@ -75,7 +75,7 @@ exports.default = {
     props.absolute = true;
 
     var horizontal = props.horizontal;
-    var scrollOffset = _utils2.default.scrollOffset(containerElement, target, horizontal) + (props.offset || 0);
+    var scrollOffset = _utils2.default.scrollOffset(containerElement, target, horizontal) + (props.offset || 0) + 2;
 
     /*
      * if animate is not provided just scroll into the view
